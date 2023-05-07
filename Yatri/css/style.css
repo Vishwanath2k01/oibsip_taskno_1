@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Poppins:wght@300;400;500;600;700&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+body{
+    background-color: #000;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    width: 100%;
+    /*top:0%*/
+    background-color: #333;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float:left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 17px;
+    border-radius: 10px;
+
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+    transition: 0.5s;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: rgb(19, 79, 66);
+    color: white;
+}
+
+.container{
+    display: flex;
+	background: #000;
+	min-height: 20vh;
+	align-items: center;
+	justify-content: center;
+}
+
+.container content {
+	position:relative;
+}
+
+.container .content h2 {
+	color: #000;
+	font-size: 6em;
+	position: absolute;
+	transform: translate(-50%, -50%);
+}
+
+.container .content h2:nth-child(1) {
+	color: transparent;
+	-webkit-text-stroke: 2px #8338ec;
+}
+
+.container .content h2:nth-child(2) {
+	color: #c19bf5;
+	animation: animate 4s ease-in-out infinite;
+}
+
+@keyframes animate {
+	0%,
+	100% {
+		clip-path: polygon(
+			0% 45%,
+			16% 44%,
+			33% 50%,
+			54% 60%,
+			70% 61%,
+			84% 59%,
+			100% 52%,
+			100% 100%,
+			0% 100%
+		);
+	}
+
+	50% {
+		clip-path: polygon(
+			0% 60%,
+			15% 65%,
+			34% 66%,
+			51% 62%,
+			67% 50%,
+			84% 45%,
+			100% 46%,
+			100% 100%,
+			0% 100%
+		);
+	}
+}
+
+h1{
+    text-align: center;
+    text-shadow: #553c9a;
+    font-size: 50px;
+}
+h4{
+    font-size: 30px;
+    font-weight: 100;
+    font-family: fantasy;
+    color: red;
+    text-shadow: #333;
+    text-align: center;
+
+}
+h3{
+    font-size: 40px;
+    font-weight: 100;
+    font-family: fantasy;
+    color: red;
+    text-shadow: #333;
+    text-align: center;
+    
+}
+h5{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    font-family:kalam;
+    color: deeppink;
+}
+
+.w3-teal, .w3-hover-teal:hover {
+    color: #fff!important;
+    background-color: #000000!important; 
+}
+.w3-row-padding w3-margin-top{
+    padding-left: 20%;
+    padding-right: 80%;
+}
+.w3-card{
+    padding: 10px;
+}
+.w3-card{
+    background-color: #fff;
+    transition: transform .2s;
+    padding: 5px;
+}
+.w3-card:hover {
+    transform: scale(1.2); 
+}
+.sub-heading {
+    text-align: center;
+    text-shadow: rgb(30, 26, 26);
+    color: transparent;
+    text-decoration: wavy;
+    width: 100%;
+    background-image: conic-gradient( #553c9a, #ee4b2b);
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-size: 40px
+}
+
+.heading {
+    font-size: 25px;
+    margin-right: 25px;
+    color: #fff;
+    padding: 5% 0% 0% 40%;
+  }
+  
+  .fa {
+    font-size: 25px;
+    color: #fff;
+  }
+  
+  .checked {
+    color: orange;
+  }
+  
+  .row{
+    padding: 0% 15% 5% 15%;
+  }
+  /* Three column layout */
+  .side {
+    float: left;
+    width: 15%;
+    margin-top:10px;
+    color: rgb(220, 214, 214);
+    text-align: right;
+    padding-right: 8px;
+  }
+  
+  .middle {
+    margin-top:10px;
+    float: left;
+    width: 70%;
+  }
+  
+  /* Place text to the right */
+  .right {
+    text-align: left;
+    padding-left: 8px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* The bar container */
+  .bar-container {
+    width: 100%;
+    background-color: #f1f1f1;
+    text-align: center;
+    color: white;
+  }
+  
+  /* Individual bars */
+  .bar-5 {width: 40%; height: 18px; background-color: #04AA6D;}
+  .bar-4 {width: 60%; height: 18px; background-color: #2196F3;}
+  .bar-3 {width: 20%; height: 18px; background-color: #00bcd4;}
+  .bar-2 {width: 15%; height: 18px; background-color: #ff9800;}
+  .bar-1 {width: 7%; height: 18px; background-color: #f44336;}
+
+.container{
+    max-width: 100%;
+    margin: auto;
+}
+
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+
+}
+
+.footer-col h4{
+    font-size: 18px;
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+    
+}
+
+
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: o;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+
+}
+
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover{
+    color: #fff;
+    padding-left: 8px;
+}
+
+
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 20px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #fff;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: white;
+}
+
+
+
+.footer{
+    background-color: #1b1a1a;
+    padding: 20px 0 0 0;
+}
+
+  
